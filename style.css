@@ -1,0 +1,58 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the background color and overall layout */
+body {
+    background-color: #ffdfba;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Style for the birthday message */
+.birthday-message {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff6347;  /* Tomato color */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Animation for the balloons image */
+.birthday-animation {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.balloons-img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Keyframes for fade-in and bounce effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
